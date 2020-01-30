@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Visit Nepal 2020
+	</title>
+	<meta charset="utf-8"><!--UTF-8 is use for the preferred encoding-->
+	<meta name="description" content="Front and back end developer"/>
+	<meta name="author" content="Shakya Bishal"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--link for font icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--meta viewport thatcontrol the page direction and scaling-->
+</head>
+<body>
+
+<!--For Header Navigation-->
+	<div class="header">		
+		<h1>VISIT NEPAL 2020</h1>
+
+			<!--Header Navigation List-->
+			<div class="headermenu" id="myTopnav">
+				<a href="index.html" class="active"> <i class="fa fa-home">Home</i></a>
+				<a href="PlaceToVisit.html"><i class="fa fa-truck"> Place to Visit</i></a>
+				<a href="ThingsToDo.html"><i class="fa fa-tasks"> Things to Do </i></a>
+				<a href="cultural.html"><i class="fa fa-cloud"> Cutural Diversity</i></a>
+				<a href="contact.html"><i class="fa fa-book"> Contact</i></a>
+				<a href="contact.html"><i class="fa fa-user"> Login/Sign up</i></a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+			</div>
+	</div>
+
+	
+	<!--contents-->
+<div class="row">
+	<div class="col-6">
+		<h1>Query Form</h1>
+		<hr>
+	 		<div class="container">
+			  <form action="post.php">
+			    <label for="fname">First Name</label>
+			    <input type="text" id="fname" name="firstname" placeholder="Type Your Fisrt Name..">
+			    <label for="lname">Last Name</label>
+			    <input type="text" id="lname" name="lastname" placeholder="Type Your last Name..">
+			    <label for="interst">I'm interestd in...</label>
+			    <select id="#" name="interest">
+			      <option value="volunteering">Volunteering</option>
+			      <option value="sponsorship">Sponsorhip</option>
+			      <option value="vnyassests">Visit Nepal Brand Assets</option>
+			    </select>
+			    <label for="subject">Message: [Optional]</label>
+			    <textarea id="subject" name="subject" placeholder="Enter text..." style="height:200px"></textarea>
+			    <input type="submit" value="Submit">
+			  </form>
+			</div>
+	</div>
+
+	<div class="col-6">
+		<h1>Address</h1>
+		<hr>
+		<h3>Kyoto City, Kamigyoku Ichijodori, Jhofukuji Nishiiru Koudonouchicho, Royal Building 203, Kyoto, Japan</h3>
+		<div class="map-responsive">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.041827910753!2d135.7771134152411!3d35.03068348035114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001085a40096db1%3A0x8c895182522ac6d1!2sThe%20Kyoto%20College%20of%20Graduate%20Studies%20for%20Informatics!5e0!3m2!1sen!2sjp!4v1580020278827!5m2!1sen!2sjp" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		</div>	
+	</div>
+</div><!--contents ending-->
+	<br/>
+	
+	<div class="footer">
+		<h5>
+			Design & Developed by: <a href="mailto:bsalsakya@gmail.com">Group:7 Project @copyright 2020</a>
+		</h5>
+	</div>
+
+	<script>
+		function myFunction() {
+	  	var x = document.getElementById("myTopnav");
+	  	if (x.className == "headermenu") {
+	    x.className += " responsive";
+	  	} else {
+	    x.className = "headermenu";
+	  	}
+		}
+	</script>
+
+</body>
+</html>
