@@ -34,11 +34,7 @@ img {
 }
 
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
 
 /*responsive gridview with 12 coloumns*/
 [class*="col-"] {
@@ -117,7 +113,7 @@ body{
 
 
 .header{
-	background-image: url("../images/banner.jpg");
+	background-image: url("../images/banner.png");
 	background-position:top;
 	background-size:cover;
 	padding:20px;
