@@ -16,9 +16,9 @@ h2{
 }
 
 p{
+  background-color:whitesmoke;
 	float: left;
 	padding: 10px;
-  background-color:whitesmoke;
 	text-align: justify;
 }
 
@@ -34,7 +34,11 @@ img {
 }
 
 
-
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 /*responsive gridview with 12 coloumns*/
 [class*="col-"] {
@@ -115,7 +119,8 @@ body{
 .header{
 	background-image: url("../images/himalaya.jpg");
 	background-position:top;
-	background-size:cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 	padding:20px;
 	height: 200px;
 }
